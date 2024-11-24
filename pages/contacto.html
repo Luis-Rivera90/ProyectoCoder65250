@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../CSS/main.css">
+
+    <title>Contacto - Gurupa</title>
+</head>
+<body>
+    <header>
+        <!--Logo-->
+        <img src="../img/gurupa-logo1.png" alt="Letras negras y en mayúsculas en fondo blanco con el nombre de la empresa Gurupa, debajo y en letras mas pequeñas la frase cocina argentina">
+        <!--Menú de navegación-->
+        <nav>
+            <ul>
+               <li>
+                  <a href="../index.html">Home</a>
+               </li>
+            </ul>
+        </nav> 
+
+    </header>
+    <main>
+        <h1>Contacto</h1>
+
+        <h2>Reservas</h2>
+
+        <!--formulario de reserva-->
+
+        <form action="/submit" method="post">
+
+            <label for="Nombre">Nombre:</label>
+            <input type="text" name="Nombre" id="Nombre">
+
+            <!--El input password es solo para demostrar que pude hacerlo, mas no tiene sentido en este formulario-->
+
+            <label for="Password">Contraseña:</label>
+            <input type="password" name="password" id="Pasword">
+
+            <label for="Fecha">Fecha:</label>
+            <input type="date" name="fecha" id="Fecha">
+
+            <label for="Hora">Hora:</label>
+            <input type="time" name="Hora" id="Hora">
+
+            <label for="Mensaje">Comentarios:</label>
+            <textarea name="Comentario" id="Mensaje"></textarea>
+
+            <input type="submit" value="Enviar">
+
+        </form>
+
+    </main>
+
+    <footer>
+        <!--Derechos reservados, patrocinios y redes sociales-->
+        <p>Todos los derechos reservados</p>
+    </footer>
+    
+</body>
+</html>
