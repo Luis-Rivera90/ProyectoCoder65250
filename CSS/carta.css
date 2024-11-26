@@ -124,7 +124,8 @@ main.carta{
 
 /*Contenido del accordion desplegado*/
 .accordion-checkbox:checked + .accordion-toggle + .accordion-content{
-    max-height: 1000px;
+    max-height: 1500px;
+    overflow-y: auto;
     transition: max-height 0.5s ease-in;
 }
 
@@ -154,8 +155,9 @@ main.carta{
 }
 
 .card-img{
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .card-content{
@@ -286,8 +288,8 @@ header nav ul li a{
 
 
 .card { 
-    flex: 1 1 calc(33.333% - 20px);
-    max-width: calc(33.333% - 20px);
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
      
 }
 
