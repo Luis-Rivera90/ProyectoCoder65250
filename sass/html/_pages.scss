@@ -1,0 +1,112 @@
+/* Estilos del main Carta */
+.carta {
+    @include flex-column;
+    flex-direction: column;
+    justify-content: center;
+    &img {
+        @include flex-row;
+        justify-content: center;
+        width: 100vw;
+        height: 80vh;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+     }
+  }
+  
+  
+  .accordion {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px;
+  
+    &-checkbox {
+      display: none;
+    }
+  
+    &-toggle {
+      width: 100%;
+      padding: 15px;
+      font-size: 1.2em;
+      text-align: left;
+      background-color: #261c24;
+      color: #f8f9fa;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      display: block;
+  
+      &:hover {
+        background-color: #cc7c2d;
+      }
+    }
+  
+    /* Contenido del accordion oculto */
+    &-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Contenido del accordion desplegado */
+    &-checkbox:checked + .accordion-toggle + .accordion-content {
+      max-height: 1500px;
+      overflow-y: auto;
+      transition: max-height 0.5s ease-in;
+    }
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    margin: 10px;
+    flex: 1 1 100%;
+    max-width: 100%;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+
+    &-img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    &-content {
+      padding: 20px;
+    }
+
+    &-title {
+        margin: 0;
+        font-size: 1.5em;
+        color: #261c24;
+      }
+
+    &-text {
+        margin-top: 10px;
+        font-size: 1em;
+        color: #261c24;
+      }
+  }
+  

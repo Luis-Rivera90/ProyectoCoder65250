@@ -1,0 +1,73 @@
+@import "../utilidades/mixin";
+
+/* Estilos Generales*/
+
+body{
+    background-color: #F8F9FA;
+    font-family:"Roboto", sans-serif;
+}
+
+/*Estilo del header*/
+
+header {
+    @include flex-row;
+    background-color: #ffffff;
+    border-top: 15px solid #261C24;
+    justify-content: space-evenly;
+    border-bottom: 15px solid #261C24;
+    padding: 20px;
+
+    img {
+        width: 40%;
+        padding: 5px;
+    }
+
+    nav {
+        div {
+            div {
+                ul {
+                    li {
+                        a {
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.nav-link {
+    color: #261C24;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    &-toggler {
+        position: absolute;
+        right: 10px;
+        z-index: 1050; 
+    }
+
+    &-collapse {
+        position: relative;
+    }
+}
+
+/* Estilo del footer*/
+
+footer{
+    background-color: #261C24;
+    color: whitesmoke;
+    text-align: center;
+    font-size: medium;
+    font-weight: 500;
+    padding: 5px;
+    align-self: center;
+}

@@ -1,0 +1,122 @@
+/*Estilos de Home*/
+
+main{
+    p{
+        span{
+            display: none;
+        }
+    }
+}
+
+.gurupa {
+    display: grid;
+    grid-column: 1fr;
+    grid-template-rows: 400px 150px 150px 200px 200px 300px 180px 180px 300px 300px 150px 150px;
+    font-family: "roboto", sans-serif;
+
+    &__video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-column: 1/3;
+        grid-row: 1/3;
+        border-bottom: 10px solid #261C24;
+    }
+
+    &__img-uno {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-row: 4/6;
+        grid-column: 1/3;
+    }
+
+    &__img-tres {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-row: 10/11;
+        grid-column: 1/3;
+    }
+
+    &__titulo {
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1.5;
+        font-weight: 700;
+        color: #261C24;
+        text-shadow: -1px 1px #FFFFFF, -2px 2px #261C24;
+        padding-top: 30px;
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    &__parrafo-uno,
+    &__parrafo-dos,
+    &__parrafo-tres {
+        text-align: center;
+        line-height: 1.2;
+        font-weight: 300;
+        grid-column: 1/3;
+        margin-bottom: 0;
+    }
+
+    &__parrafo-uno {
+        padding: 20px;
+        padding-top: 40px;
+        background-color: #261C24;
+        color: whitesmoke;
+        grid-row: 6/7;
+    }
+
+    &__parrafo-dos {
+        padding: 15px;
+        padding-top: 50px;
+        background-color: #261C24;
+        color: whitesmoke;
+        grid-row: 9/10;
+    }
+
+    &__parrafo-tres {
+        padding: 40px;
+        grid-row: 11/12;
+    }
+}
+
+.carrusel {
+    grid-column: 1 / 3;
+    grid-row: 7 / 9;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    display: grid;
+    grid-template-columns: repeat(5, 100%);
+    animation: slide 15s infinite;
+    width: 100%;
+    input{
+        display: none;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        display: block;
+    }
+}
+
+
+.slide {
+    width: 100%;
+    @keyframes slide{
+        0%, 17% { transform: translateX(0%); } 
+        22%, 39% { transform: translateX(-100%); } 
+        44%, 61% { transform: translateX(-200%); } 
+        66%, 83% { transform: translateX(-300%); } 
+        88%, 100% { transform: translateX(-400%); }
+    }
+}
+
