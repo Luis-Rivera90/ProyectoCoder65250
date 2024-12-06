@@ -1,52 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="../CSS/main.css">
-
-    <title>Conocénos - Gurupa</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+       <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+        <!--CSS-->
+        <link rel="stylesheet" href="../CSS/main.css">
+    
+        <title>Conócenos - Gurupa</title>
+    </head>
 <body>
     <header>
-        <!--Logo-->
-        <img src="../img/gurupa-logo1.png" alt="Letras negras y en mayúsculas en fondo blanco con el nombre de la empresa Gurupa, debajo y en letras mas pequeñas la frase cocina argentina">
-        <!--Menú de navegación-->
-        <nav>
-            <ul>
-               <li>
-                  <a href="../index.html">Home</a>
-               </li>
-               <li>
-                  <a href="contacto.html">Contacto</a>
-               </li>
-            </ul>
-        </nav> 
 
+        <!--Logo-->
+       
+            <img src="../img/gurupa-logo1-removebg-preview.png" alt="Letras negras y en mayúsculas en fondo blanco con el nombre de la empresa Gurupa, debajo y en letras mas pequeñas la frase cocina argentina">
+        
+        <!-- Menú de navegación-->
+    
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    
     </header>
 
-    <main>
-        <h1>Quiénes Somos?</h1>
-        <img src="../img/conocenos1.png" alt="Se muestra un cocinero con uniforme blanco y delantal azul de jean sosteniendo una pinza de cocina en una mano y con la otra utiliza un paño para agarrar el mango de un sartén que esta sobre una hornalla en una cocina de paredes de ceramica blanca que similan una estructura de ladrillo">
+    <main class="us">
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iure veniam facilis, animi quod nesciunt laudantium sit ullam enim! Sed, possimus harum maiores et adipisci ex animi ullam architecto nihil.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, aperiam doloremque. Temporibus consectetur nulla laudantium itaque, eum corrupti. Ipsa doloribus quidem dolore excepturi tenetur architecto culpa, ex voluptate dolor ipsam?</p>
+        <img src="../img/conocenos2.png" class="us__img-zero" alt="">
+  
+     <h1 class="us__titulo">¿Quiénes somos?</h1>
 
-        <h2>Conocé a nuestro equipo!!</h2>
-        <img src="../img/conocenos4.jpg" alt="Muestra a un chef de uniforme y gorro blanco mirando hacia la camara y sonriendo en una cocina que parece estar en medio del servicio y se muestran otros cocineros con el mismo uniforme trabajando al fondo de forma desenfocada">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, et recusandae officiis consectetur laboriosam non quod aut dolores modi assumenda expedita. Perferendis corporis ex nulla vel ipsum quos repudiandae accusamus.</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium debitis hic repellat dolor optio nemo officia tempore illum. Neque maxime enim porro rerum vel eveniet saepe dolorem. Ratione, numquam repudiandae!</p>
+     <div class="pagescarrusel">
+      <div class="pagesslides">
+        <input type="radio" name="radio-btn" id="img-1" checked>
+        <input type="radio" name="radio-btn" id="img-2">
+        <input type="radio" name="radio-btn" id="img-3">
+        <input type="radio" name="radio-btn" id="img-4">
+        <input type="radio" name="radio-btn" id="img-5">
+
+        <div class="pagesslide first">
+          <img src="../img/conocenos1.png" alt="">
+        </div>
+        <div class="pagesslide">
+          <img src="../img/conocenos3.png" alt="">
+        </div>
+        <div class="pagesslide">
+          <img src="../img/conocenos4.png" alt="">
+        </div>
+        <div class="pagesslide">
+          <img src="../img/conocenos7.png" alt="">
+        </div>
+        <div class="pagesslide">
+          <img src="../img/conocenos6.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="nav-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+        <div class="auto-btn5"></div>
+      </div>
+
+      <div class="nav-manual">
+        <label for="img-1" class="manual-btn"></label>
+        <label for="img-2" class="manual-btn"></label>
+        <label for="img-3" class="manual-btn"></label>
+        <label for="img-4" class="manual-btn"></label>
+        <label for="img-5" class="manual-btn"></label>
+      </div>
+     </div>
+
+     <img src="../img/ivan-gurupa.jpg" class="us__img-uno" alt="">
+
+       <p class="us__parrafo-uno">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis distinctio cupiditate minus porro incidunt fugiat illum necessitatibus ratione. Voluptatum nam, alias porro repellat in veniam fugit repellendus aliquid non optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore optio iusto ipsa vero tenetur totam tempora facere dolores, ipsam sequi corporis vitae in laborum repellat, dolor, laudantium dolorum excepturi praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea quam quas odio, repellendus quidem, earum pariatur placeat alias asperiores animi quae ratione expedita doloremque dignissimos neque vel soluta ipsum distinctio.</span> </p>
+     
+      <p class="us__parrafo-dos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, tempora nobis! Sunt rerum culpa soluta error aut distinctio, excepturi fuga deserunt maxime corrupti dolorem magnam labore rem iusto! A, beatae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis quam expedita exercitationem, suscipit neque maiores, placeat pariatur natus eligendi repellat quo eos ut error porro officiis aut laudantium temporibus doloribus.<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea quam quas odio, repellendus quidem, earum pariatur placeat alias asperiores animi quae ratione expedita doloremque dignissimos neque vel soluta ipsum distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quas perspiciatis alias, necessitatibus repellendus, quam dolor voluptatum, facere porro rem veniam nisi sint? Eveniet nemo nobis in, aut distinctio obcaecati? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi totam obcaecati corporis voluptates provident sunt, inventore quibusdam sit nihil ad velit magni at officia ipsa, maiores, doloribus quo corrupti modi! </span> </p>
+     
+      <p class="us__parrafo-tres">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nam repellat aut eveniet doloribus fugit? Enim non, architecto quia fugiat dolores reiciendis accusamus est in aspernatur doloremque, sapiente laudantium vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium fugiat perferendis nulla nostrum cupiditate id recusandae eius, perspiciatis ut dolore et magnam quis omnis cumque impedit laborum? Quis, sed enim! Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea quam quas odio, repellendus quidem, earum pariatur placeat alias asperiores animi quae ratione expedita doloremque dignissimos neque vel soluta ipsum distinctio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea quam quas odio, repellendus quidem, earum pariatur placeat alias asperiores animi quae ratione expedita doloremque dignissimos neque vel soluta ipsum distinctio.</span> </p>
     </main>
 
     <footer>
         <!--Derechos reservados, patrocinios y redes sociales-->
         <p>Todos los derechos reservados</p>
     </footer>
+
+       <!--Bootstrap js-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
 </body>
 </html>
