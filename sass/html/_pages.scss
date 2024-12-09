@@ -1,4 +1,7 @@
+@import "../utilidades/variables";
+
 /* Estilos de los main Carta y vinos */
+
 .carta {
     @include flex-column;
     flex-direction: column;
@@ -208,4 +211,58 @@
 
 .pagesslide {
   width: 100%;
+}
+
+.reservas{
+  @include flex-column;
+  flex-direction: column;
+  font-weight: 600;
+  color: #261C24;
+  text-transform: uppercase;
+}
+
+.formulario{
+  @include flex-column;
+  flex-direction: column; 
+  height: 600px;
+  padding: 20px;
+  margin: 30px;
+  justify-content: space-evenly;
+
+  h2{
+    line-height: 1.5;
+    font-weight: 700;
+    color: #261C24;
+    text-shadow: -1px 1px #FFFFFF, -2px 2px #261C24;
+    padding-top: 30px;
+  }
+  
+  label, input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      
+  }
+  textarea{
+    @include medidas(250px, 120px);
+    padding: 5px;
+  }
+
+  input{
+    @include medidas(200px, 30px);
+    padding: 5px;
+  }
+
+  input, textarea{
+    border: #261C24 2px solid;
+  }
+
+}
+
+.comensales input{
+  text-align: center
+}
+
+input.submit{
+  @include medidas(60px, 35px);
 }

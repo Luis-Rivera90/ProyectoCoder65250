@@ -9,16 +9,18 @@
 
     .navbar{
         @include flex-row;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 100%;
         margin: 0;
         padding: 0;
     
         &-toggler {
             margin-top: 15px;
-        margin-right: 30px; 
+        margin-right: 100px; 
         z-index: 1050;
         }
+
+        
     }
     
     .gurupa{
@@ -74,6 +76,7 @@
 
     footer{
         padding: 20px;
+        flex-direction: row;
     }
     
 }
@@ -130,6 +133,7 @@
         width: 100vw;
         max-width: 100%;
         box-sizing: border-box;
+        
     }
 
     .carrusel{

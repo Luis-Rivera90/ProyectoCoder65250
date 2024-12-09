@@ -51,12 +51,13 @@ header {
 
     &-toggler {
         position: absolute;
-        right: 10px;
+        right: 20px;
         z-index: 1050; 
     }
 
     &-collapse {
         position: relative;
+        
     }
 }
 
@@ -68,6 +69,12 @@ footer{
     text-align: center;
     font-size: medium;
     font-weight: 500;
-    padding: 5px;
+    padding: 3px;
     align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    p{
+        margin: auto;
+    }
 }
