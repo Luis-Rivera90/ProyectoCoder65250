@@ -288,7 +288,7 @@ main p span {
 .us {
   display: grid;
   grid-column: 1fr;
-  grid-template-rows: 400px 150px 300px 450px 300px 300px 300px;
+  grid-template-rows: 400px 150px 350px 450px 350px 300px 450px;
   font-family: "roboto", sans-serif;
 }
 .us__img-zero {
@@ -298,6 +298,7 @@ main p span {
   grid-column: 1/3;
   grid-row: 1/2;
   border-bottom: 10px solid #261C24;
+  margin-top: 0;
 }
 .us__img-uno {
   width: 100%;
@@ -378,7 +379,6 @@ main p span {
   flex-direction: column;
   font-weight: 600;
   color: #261C24;
-  text-transform: uppercase;
 }
 
 .formulario {
@@ -396,6 +396,7 @@ main p span {
   color: #261C24;
   text-shadow: -1px 1px #FFFFFF, -2px 2px #261C24;
   padding-top: 30px;
+  text-transform: uppercase;
 }
 .formulario label, .formulario input {
   display: flex;
@@ -406,23 +407,25 @@ main p span {
   width: 250px;
   height: 120px;
   padding: 5px;
+  border-radius: 10px;
 }
 .formulario input {
   width: 200px;
   height: 30px;
   padding: 5px;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
 }
 .formulario input, .formulario textarea {
   border: #261C24 2px solid;
 }
 
-.comensales input {
-  text-align: center;
-}
-
 input.submit {
   width: 60px;
   height: 35px;
+  background-color: #261C24;
+  color: #f8f9fa;
 }
 
 @media screen and (min-width: 600px) {
