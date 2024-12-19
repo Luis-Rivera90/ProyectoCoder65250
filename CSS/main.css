@@ -385,7 +385,7 @@ main p span {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 600px;
+  height: 700px;
   padding: 20px;
   margin: 30px;
   justify-content: space-evenly;
@@ -583,8 +583,8 @@ input.submit {
     grid-column: 1/4;
     grid-row: 6/8;
     margin-bottom: 0;
-    padding: 50px;
-    padding-top: 180px;
+    padding: 100px;
+    padding-top: 240px;
   }
   .gurupa__parrafo-tres {
     grid-column: 1/7;
@@ -641,8 +641,8 @@ input.submit {
     grid-column: 4/7;
     grid-row: 5/7;
     margin-bottom: 0;
-    padding: 50px;
-    padding-top: 180px;
+    padding: 100px;
+    padding-top: 220px;
   }
   .us__parrafo-tres {
     grid-column: 1/4;
